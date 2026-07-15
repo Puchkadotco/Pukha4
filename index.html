@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="styles.css">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brand Name | Hygienic Street Puchka</title>
+<title>Puchka.Co | Hygienic Street Puchka</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="styles.css">
 
 <style>
 *{
@@ -205,7 +209,12 @@ footer{
 66%{background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947');}
 100%{background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');}
 }
-
+.menu-btn{
+    display:none;
+    font-size:28px;
+    color:#ff6b00;
+    cursor:pointer;
+}
 @media(max-width:768px){
 
 .about{
@@ -221,13 +230,37 @@ font-size:18px;
 }
 
 header{
-flex-direction:column;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-direction:row;
+padding:15px 20px;
 }
 
 nav{
-margin-top:10px;
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+right:20px;
+background:white;
+width:220px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
+nav.active{
+display:flex;
+}
+
+nav a{
+margin:10px 0;
+}
+
+.menu-btn{
+display:block;
+}
 }
 </style>
 
