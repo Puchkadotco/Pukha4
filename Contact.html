@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Brand Name</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fff8f0;
+color:#333;
+}
+
+/* Hero */
+
+.hero{
+height:55vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("images/contact-banner.jpg") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:#fff;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* Contact Section */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:70px auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-info{
+background:linear-gradient(135deg,#ff6b00,#ff9f43);
+padding:40px;
+border-radius:20px;
+color:#fff;
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.contact-info h2{
+margin-bottom:25px;
+font-size:32px;
+}
+
+.contact-info p{
+margin:20px 0;
+font-size:17px;
+line-height:1.7;
+}
+
+.contact-info i{
+font-size:22px;
+margin-right:10px;
+}
+
+.form-box{
+background:#fff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.form-box h2{
+color:#ff6b00;
+margin-bottom:25px;
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:15px;
+margin:12px 0;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+outline:none;
+}
+
+textarea{
+resize:none;
+height:140px;
+}
+
+button{
+width:100%;
+padding:16px;
+border:none;
+background:#ff6b00;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#222;
+}
+
+/* Dealership */
+
+.dealer{
+padding:80px 8%;
+background:#fff3e6;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+color:#ff6b00;
+margin-bottom:15px;
+}
+
+.subtitle{
+text-align:center;
+margin-bottom:50px;
+color:#666;
+}
+
+.dealer-form{
+max-width:900px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+/* Footer */
+
+footer{
+margin-top:70px;
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+.container,
+.row{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div>
+
+<h1>Contact Us</h1>
+
+<p>We'd love to hear from you. Let's make every bite unforgettable.</p>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<div class="container">
+
+<div class="contact-info">
+
+<h2>Get In Touch</h2>
+
+<p>📍 <b>Address:</b><br>123 Street Food Lane, Your City</p>
+
+<p>📞 <b>Phone:</b><br>+91 98765 43210</p>
+
+<p>📧 <b>Email:</b><br>info@brandname.com</p>
+
+<p>🕒 <b>Opening Hours:</b><br>11:00 AM – 10:30 PM (Every Day)</p>
+
+<p>
+Whether you have questions, feedback, catering requirements, or dealership inquiries, our team is always ready to assist you.
+</p>
+
+</div>
+
+<div class="form-box">
+
+<h2>Send a Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="text" placeholder="Subject">
+
+<textarea placeholder="Write Your Message..."></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Dealership -->
+
+<section class="dealer">
+
+<h1 class="title">Become Our Dealership Partner</h1>
+
+<p class="subtitle">
+Join our growing family and bring hygienic, delicious puchka to your city.
+</p>
+
+<div class="dealer-form">
+
+<form>
+
+<div class="row">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+</div>
+
+<div class="row">
+
+<input type="email" placeholder="Email Address">
+
+<input type="text" placeholder="City">
+
+</div>
+
+<div class="row">
+
+<input type="text" placeholder="State">
+
+<input type="text" placeholder="Business Experience">
+
+</div>
+
+<select required>
+
+<option>Select Investment Range</option>
+
+<option>₹1 - ₹3 Lakhs</option>
+
+<option>₹3 - ₹5 Lakhs</option>
+
+<option>₹5 - ₹10 Lakhs</option>
+
+<option>Above ₹10 Lakhs</option>
+
+</select>
+
+<textarea placeholder="Tell us why you want to become our dealership partner..."></textarea>
+
+<button type="submit">Apply for Dealership</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Brand Name</h2>
+
+<p>Street Taste • Premium Hygiene • Trusted Partnership</p>
+
+<p>© 2026 Brand Name. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

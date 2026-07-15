@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services | Brand Name</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fff9f2;
+color:#333;
+}
+
+.hero{
+height:70vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:65px;
+font-weight:800;
+}
+
+.hero p{
+margin-top:20px;
+font-size:22px;
+max-width:800px;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+color:#ff6b00;
+margin-bottom:20px;
+}
+
+.subtitle{
+text-align:center;
+color:#666;
+margin-bottom:60px;
+font-size:18px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-15px);
+box-shadow:0 20px 40px rgba(255,107,0,.25);
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.content{
+padding:30px;
+}
+
+.content h2{
+color:#ff6b00;
+margin-bottom:15px;
+}
+
+.content p{
+line-height:1.8;
+color:#555;
+}
+
+.banner{
+margin-top:80px;
+padding:70px;
+border-radius:25px;
+background:linear-gradient(135deg,#ff6b00,#ffb347);
+text-align:center;
+color:white;
+}
+
+.banner h2{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.banner p{
+font-size:19px;
+line-height:1.9;
+max-width:900px;
+margin:auto;
+}
+
+.features{
+margin-top:80px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.feature{
+background:white;
+padding:35px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.feature:hover{
+background:#ff6b00;
+color:white;
+transform:scale(1.05);
+}
+
+.feature h3{
+margin:15px 0;
+}
+
+.cta{
+margin-top:90px;
+background:#222;
+padding:70px;
+border-radius:25px;
+text-align:center;
+color:white;
+}
+
+.cta h2{
+font-size:45px;
+}
+
+.cta p{
+margin:20px auto;
+max-width:800px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 40px;
+background:#ff6b00;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+font-size:18px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+color:#ff6b00;
+}
+
+footer{
+margin-top:70px;
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.banner{
+padding:40px 25px;
+}
+
+.cta{
+padding:40px 20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<div>
+
+<h1>Our Services</h1>
+
+<p>
+More than just Puchka...
+We serve unforgettable moments filled with crunch, freshness, happiness, and irresistible flavours.
+</p>
+
+</div>
+
+</div>
+
+<section>
+
+<h1 class="title">What We Offer</h1>
+
+<p class="subtitle">
+Every service is designed to make your Puchka experience extraordinary.
+</p>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+
+<div class="content">
+
+<h2>🥔 Fresh Puchka</h2>
+
+<p>
+Handcrafted crispy puchkas filled with freshly prepared potato stuffing and aromatic spices that burst with authentic street flavours.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f">
+
+<div class="content">
+
+<h2>💧 Six Signature Water Flavours</h2>
+
+<p>
+Mint Magic • Raw Mango • Lemon Twist • Sweet Tamarind • Garlic Blast • Spicy Fire — every flavour is prepared using purified water.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+
+<div class="content">
+
+<h2>✨ Hygienic Cart Experience</h2>
+
+<p>
+Covered ingredients, gloves, sanitised utensils, and RO water ensure every bite is clean, safe, and delicious.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="banner">
+
+<h2>Every Bite is a Celebration</h2>
+
+<p>
+
+Imagine the first crunch...
+The crispy shell breaks open...
+The spicy potato melts in your mouth...
+A splash of chilled tangy water explodes with flavour...
+
+It's not just food.
+
+It's an emotion that keeps calling you back for one more puchka.
+
+</p>
+
+</div>
+
+<h1 class="title" style="margin-top:80px;">Why Our Service Stands Out</h1>
+
+<div class="features">
+
+<div class="feature">
+<h3>🧤 Premium Hygiene</h3>
+<p>Safe preparation with clean serving practices.</p>
+</div>
+
+<div class="feature">
+<h3>🥬 Fresh Everyday</h3>
+<p>Ingredients prepared fresh every morning.</p>
+</div>
+
+<div class="feature">
+<h3>⚡ Fast Service</h3>
+<p>Quick serving without compromising quality.</p>
+</div>
+
+<div class="feature">
+<h3>💛 Affordable</h3>
+<p>Premium quality at pocket-friendly prices.</p>
+</div>
+
+<div class="feature">
+<h3>😋 Authentic Taste</h3>
+<p>Traditional street flavour you'll never forget.</p>
+</div>
+
+<div class="feature">
+<h3>😊 Happy Customers</h3>
+<p>Your satisfaction is our biggest reward.</p>
+</div>
+
+</div>
+
+<div class="cta">
+
+<h2>Ready to Taste Happiness?</h2>
+
+<p>
+
+Whether you're with friends, family, or simply satisfying your cravings,
+our puchkas promise freshness, flavour, and memories you'll always cherish.
+
+Come hungry...
+Leave smiling.
+
+</p>
+
+<a href="#" class="btn">Visit Our Cart</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Brand Name</h2>
+
+<p>Street Taste • Premium Hygiene • Unforgettable Experience</p>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

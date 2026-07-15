@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Brand Name</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fff8f0;
+color:#333;
+}
+
+/* Hero */
+
+.hero{
+height:60vh;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("images/gallery-banner.jpg") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* Slider */
+
+.slider{
+width:90%;
+margin:60px auto;
+overflow:hidden;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.slides{
+display:flex;
+width:500%;
+animation:slide 20s infinite;
+}
+
+.slides img{
+width:100%;
+height:500px;
+object-fit:cover;
+}
+
+@keyframes slide{
+
+0%,18%{transform:translateX(0);}
+20%,38%{transform:translateX(-100%);}
+40%,58%{transform:translateX(-200%);}
+60%,78%{transform:translateX(-300%);}
+80%,100%{transform:translateX(-400%);}
+
+}
+
+/* Gallery */
+
+.title{
+text-align:center;
+font-size:42px;
+margin:50px 0;
+color:#ff6b00;
+}
+
+.gallery{
+width:90%;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding-bottom:70px;
+}
+
+.gallery .card{
+overflow:hidden;
+border-radius:18px;
+position:relative;
+cursor:pointer;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.gallery img{
+width:100%;
+height:280px;
+object-fit:cover;
+transition:.5s;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,107,0,.85);
+display:flex;
+justify-content:center;
+align-items:center;
+opacity:0;
+transition:.5s;
+color:white;
+font-size:25px;
+font-weight:bold;
+}
+
+.card:hover img{
+transform:scale(1.15);
+}
+
+.card:hover .overlay{
+opacity:1;
+}
+
+/* Blog */
+
+.blog{
+background:#fff3e6;
+padding:80px 8%;
+}
+
+.blog-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.blog-card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.blog-card:hover{
+transform:translateY(-10px);
+}
+
+.blog-card h3{
+color:#ff6b00;
+margin-bottom:15px;
+}
+
+.blog-card p{
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.blog-card a{
+text-decoration:none;
+background:#ff6b00;
+color:white;
+padding:12px 25px;
+border-radius:30px;
+}
+
+/* Footer */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.slides img{
+height:250px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div>
+
+<h1>Our Gallery</h1>
+
+<p>Capturing Every Crunch, Every Smile & Every Beautiful Moment.</p>
+
+</div>
+
+</section>
+
+<!-- Slider -->
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="images/slider1.jpg">
+
+<img src="images/slider2.jpg">
+
+<img src="images/slider3.jpg">
+
+<img src="images/slider4.jpg">
+
+<img src="images/slider5.jpg">
+
+</div>
+
+</div>
+
+<h2 class="title">Gallery</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="images/gallery1.jpg">
+<div class="overlay">Fresh Puchka</div>
+</div>
+
+<div class="card">
+<img src="images/gallery2.jpg">
+<div class="overlay">Happy Customers</div>
+</div>
+
+<div class="card">
+<img src="images/gallery3.jpg">
+<div class="overlay">Hygienic Cart</div>
+</div>
+
+<div class="card">
+<img src="images/gallery4.jpg">
+<div class="overlay">Mint Water</div>
+</div>
+
+<div class="card">
+<img src="images/gallery5.jpg">
+<div class="overlay">Evening Rush</div>
+</div>
+
+<div class="card">
+<img src="images/gallery6.jpg">
+<div class="overlay">Family Time</div>
+</div>
+
+<div class="card">
+<img src="images/gallery7.jpg">
+<div class="overlay">Special Events</div>
+</div>
+
+<div class="card">
+<img src="images/gallery8.jpg">
+<div class="overlay">Signature Flavours</div>
+</div>
+
+</div>
+
+<!-- Blog Section -->
+
+<section class="blog">
+
+<h2 class="title">Latest Stories</h2>
+
+<div class="blog-container">
+
+<div class="blog-card">
+
+<h3>How We Started</h3>
+
+<p>
+Our dream was simple—serve authentic street-style puchka with premium hygiene and unforgettable taste.
+</p>
+
+<a href="#">Read More</a>
+
+</div>
+
+<div class="blog-card">
+
+<h3>Our 6 Signature Water Flavours</h3>
+
+<p>
+Discover Mint Magic, Raw Mango, Lemon Twist, Garlic Blast, Sweet Tamarind and Spicy Fire.
+</p>
+
+<a href="#">Read More</a>
+
+</div>
+
+<div class="blog-card">
+
+<h3>Behind Every Crunch</h3>
+
+<p>
+Every puchka is freshly prepared using quality ingredients, purified water and served with love.
+</p>
+
+<a href="#">Read More</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Brand Name</h2>
+
+<p>Street Taste • Premium Hygiene • Made With Love</p>
+
+<p>© 2026 Brand Name. All Rights Reserved.</p>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
