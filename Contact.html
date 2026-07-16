@@ -252,24 +252,40 @@ Whether you have questions, feedback, catering requirements, or dealership inqui
 
 <h2>Send a Message</h2>
 
-<form class="contact-form"
-      action="https://formsubmit.co/Vishaltv56y@gmail.com"
-      method="POST">
+<form id="contactForm" class="contact-form">
+  
+  <input
+type="text"
+id="contactName"
+name="name"
+placeholder="Your Name"
+required>
 
-    <input type="hidden" name="_subject" value="New Contact Form Submission">
-    <input type="hidden" name="_captcha" value="false">
+<input
+type="email"
+id="contactEmail"
+name="email"
+placeholder="Email Address"
+required>
 
+<input
+type="tel"
+id="contactPhone"
+name="phone"
+placeholder="Phone Number"
+required>
 
-<input type="text" placeholder="Your Name" required>
+<input
+type="text"
+id="contactSubject"
+name="subject"
+placeholder="Subject">
 
-<input type="email" placeholder="Email Address" required>
-
-<input type="tel" placeholder="Phone Number" required>
-
-<input type="text" placeholder="Subject">
-
-<textarea placeholder="Write Your Message..."></textarea>
-
+<textarea
+id="contactMessage"
+name="message"
+placeholder="Write Your Message..."
+required></textarea>
 <button type="submit">Send Message</button>
 
 </form>
@@ -351,6 +367,9 @@ Join our growing family and bring hygienic, delicious puchka to your city.
 
 </footer>
 
+<!-- Google reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- Your JavaScript -->
 <script src="script.js"></script>
-</body>
 </html>
