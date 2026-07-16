@@ -286,7 +286,17 @@ id="contactMessage"
 name="message"
 placeholder="Write Your Message..."
 required></textarea>
-<button type="submit">Send Message</button>
+
+  <div
+class="g-recaptcha"
+data-sitekey="YOUR_SITE_KEY">
+  </div>
+  
+  <button
+type="submit"
+id="contactSubmit">
+Send Message
+</button>
 
 </form>
 
@@ -304,10 +314,7 @@ required></textarea>
 Join our growing family and bring hygienic, delicious puchka to your city.
 </p>
 
-<div class="dealer-form">
-<form action="https://formsubmit.co/vishaltv56y@gmail.com" method="POST">
-  <input type="hidden" name="_subject" value="New Dealership Application">
-<input type="hidden" name="_captcha" value="false">
+<div<form id="dealerForm">">
 
 <div class="row">
 
