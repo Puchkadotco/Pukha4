@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Visit Our Cart | Puchka.Co</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#fff8f0;
+}
+
+.hero{
+height:55vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("images/cart-banner.jpg") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.search-section{
+width:90%;
+max-width:1200px;
+margin:50px auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.search-section input,
+.search-section select{
+
+width:320px;
+padding:16px;
+font-size:17px;
+border:none;
+border-radius:35px;
+box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+.stats{
+
+width:90%;
+max-width:1200px;
+margin:50px auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.stat{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.stat h2{
+
+font-size:42px;
+
+color:#ff6b00;
+
+margin:0;
+
+}
+
+.stat p{
+
+font-size:18px;
+
+margin-top:10px;
+
+}
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.city-title{
+
+font-size:35px;
+
+color:#ff6b00;
+
+margin:70px 0 30px;
+
+border-left:6px solid #ff6b00;
+
+padding-left:15px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 12px 24px rgba(0,0,0,.12);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.card-content{
+
+padding:25px;
+
+}
+
+.card h3{
+
+color:#ff6b00;
+
+margin:0;
+
+}
+
+.rating{
+
+margin:10px 0;
+
+font-weight:bold;
+
+color:#ff9800;
+
+}
+
+.info{
+
+margin:12px 0;
+
+line-height:1.8;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:7px 18px;
+
+background:#28a745;
+
+color:white;
+
+border-radius:30px;
+
+font-size:14px;
+
+margin-bottom:15px;
+
+}
+
+.buttons{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-top:20px;
+
+}
+
+.buttons a{
+
+flex:1;
+
+text-align:center;
+
+padding:12px;
+
+text-decoration:none;
+
+color:white;
+
+border-radius:30px;
+
+font-weight:bold;
+
+}
+
+.map{
+
+background:#ff6b00;
+
+}
+
+.call{
+
+background:#0d6efd;
+
+}
+
+.whatsapp{
+
+background:#25D366;
+
+}
+
+.menu{
+
+background:#222;
+
+}
+
+footer{
+
+margin-top:80px;
+
+background:#222;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-bowl-food"></i>
+        Puchka.Co
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Service.html">Services</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    
+    </header>
+
+<section class="hero">
+
+<div>
+
+<h1>Visit Our Cart</h1>
+
+<p>Find the nearest Puchka.Co cart and enjoy authentic street flavours.</p>
+
+</div>
+
+</section>
+
+<section class="search-section">
+
+<input type="text" placeholder="🔍 Search by Area">
+
+<select>
+
+<option>Select City</option>
+
+<option>Gurugram</option>
+
+<option>Delhi</option>
+
+<option>Noida</option>
+
+<option>Faridabad</option>
+
+</select>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+
+<h2>40+</h2>
+
+<p>Active Carts</p>
+
+</div>
+
+<div class="stat">
+
+<h2>6</h2>
+
+<p>Signature Water Flavours</p>
+
+</div>
+
+<div class="stat">
+
+<h2>4.9★</h2>
+
+<p>Customer Rating</p>
+
+</div>
+
+<div class="stat">
+
+<h2>50K+</h2>
+
+<p>Happy Customers</p>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 class="city-title">📍 Gurugram</h2>
+
+<div class="cards">
+  <!-- ================= GURUGRAM ================= -->
+
+<div class="card">
+
+<img src="images/cyberhub.jpg" alt="Cyber Hub">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Cyber Hub Cart</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.9 (842 Reviews)</p>
+
+<div class="info">
+
+📍 Cyber Hub, DLF Phase 2, Gurugram<br>
+
+🕒 11:00 AM – 11:00 PM<br>
+
+📞 +91 98765 43210<br>
+
+🚗 Parking Available<br>
+
+🪑 Outdoor Seating<br>
+
+🥤 All 6 Water Flavours
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Cyber+Hub+Gurugram" target="_blank" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543210" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543210" target="_blank" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/sector29.jpg">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Sector 29 Cart</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.8 (615 Reviews)</p>
+
+<div class="info">
+
+📍 Sector 29 Market, Gurugram<br>
+
+🕒 12 PM – 10:30 PM<br>
+
+📞 +91 98765 43211<br>
+
+🚗 Parking Available<br>
+
+🪑 Family Seating<br>
+
+🥤 All Flavours Available
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Sector+29+Gurugram" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543211" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543211" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/golfcourse.jpg">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Golf Course Road</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 5.0 (320 Reviews)</p>
+
+<div class="info">
+
+📍 Golf Course Road, Gurugram<br>
+
+🕒 11 AM – 11 PM<br>
+
+📞 +91 98765 43212<br>
+
+🚗 Parking Available<br>
+
+🥤 Premium Water Flavours
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Golf+Course+Road+Gurugram" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543212" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543212" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= DELHI ================= -->
+
+<h2 class="city-title">📍 Delhi</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="images/cp.jpg">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Connaught Place</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.9 (1200 Reviews)</p>
+
+<div class="info">
+
+📍 Block A, Connaught Place, New Delhi<br>
+
+🕒 11 AM – 11 PM<br>
+
+📞 +91 98765 43213<br>
+
+🚗 Parking Available
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Connaught+Place+Delhi" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543213" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543213" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/rajouri.jpg">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Rajouri Garden</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.8 (860 Reviews)</p>
+
+<div class="info">
+
+📍 Rajouri Garden Main Market<br>
+
+🕒 12 PM – 10:30 PM<br>
+
+📞 +91 98765 43214
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Rajouri+Garden+Delhi" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543214" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543214" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/lajpat.jpg">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Lajpat Nagar</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.9 (710 Reviews)</p>
+
+<div class="info">
+
+📍 Central Market, Lajpat Nagar<br>
+
+🕒 11 AM – 10 PM<br>
+
+📞 +91 98765 43215
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Lajpat+Nagar+Delhi" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543215" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543215" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= NOIDA ================= -->
+
+<h2 class="city-title">📍 Noida</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="images/noida18.jpg">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Sector 18</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.9 (680 Reviews)</p>
+
+<div class="info">
+
+📍 Near Metro Gate 2, Sector 18, Noida<br>
+
+🕒 11 AM – 10 PM<br>
+
+📞 +91 98765 43216
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Sector+18+Noida" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543216" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543216" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="images/gaurcity.jpg" alt="Gaur City">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Gaur City Mall</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.8 (534 Reviews)</p>
+
+<div class="info">
+
+📍 Gaur City Mall, Greater Noida West<br>
+
+🕒 11:00 AM – 10:30 PM<br>
+
+📞 +91 98765 43217<br>
+
+🚗 Parking Available<br>
+
+🪑 Indoor Seating<br>
+
+🥤 All 6 Water Flavours
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Gaur+City+Mall+Greater+Noida" target="_blank" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543217" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543217" target="_blank" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/noidaextension.jpg" alt="Noida Extension">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Noida Extension</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.9 (466 Reviews)</p>
+
+<div class="info">
+
+📍 Noida Extension Market<br>
+
+🕒 12:00 PM – 11:00 PM<br>
+
+📞 +91 98765 43218<br>
+
+🚗 Parking Available<br>
+
+🥤 Signature Water Flavours
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Noida+Extension" target="_blank" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543218" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543218" target="_blank" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= FARIDABAD ================= -->
+
+<h2 class="city-title">📍 Faridabad</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="images/sector15.jpg" alt="Sector 15">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Sector 15 Market</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.8 (580 Reviews)</p>
+
+<div class="info">
+
+📍 Sector 15 Market, Faridabad<br>
+
+🕒 11:00 AM – 10:00 PM<br>
+
+📞 +91 98765 43219<br>
+
+🚗 Parking Available<br>
+
+🥤 All Flavours Available
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Sector+15+Faridabad" target="_blank" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543219" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543219" target="_blank" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/crown.jpg" alt="Crown Interiorz">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>Crown Interiorz Mall</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.9 (635 Reviews)</p>
+
+<div class="info">
+
+📍 Crown Interiorz Mall, Faridabad<br>
+
+🕒 11:00 AM – 11:00 PM<br>
+
+📞 +91 98765 43220<br>
+
+🪑 Indoor Seating<br>
+
+🥤 Premium Water Flavours
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=Crown+Interiorz+Mall+Faridabad" target="_blank" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543220" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543220" target="_blank" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/nit.jpg" alt="NIT Faridabad">
+
+<div class="card-content">
+
+<span class="badge">🟢 Open Now</span>
+
+<h3>NIT Faridabad</h3>
+
+<p class="rating">⭐⭐⭐⭐⭐ 4.7 (490 Reviews)</p>
+
+<div class="info">
+
+📍 NIT 1 Market, Faridabad<br>
+
+🕒 12:00 PM – 10:30 PM<br>
+
+📞 +91 98765 43221<br>
+
+🚗 Parking Available
+
+</div>
+
+<div class="buttons">
+
+<a href="https://maps.google.com/?q=NIT+Faridabad" target="_blank" class="map">📍 Navigate</a>
+
+<a href="tel:+919876543221" class="call">📞 Call</a>
+
+<a href="https://wa.me/919876543221" target="_blank" class="whatsapp">WhatsApp</a>
+
+<a href="Service.html" class="menu">Menu</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h2>Puchka.Co</h2>
+
+<p>Fresh • Hygienic • Authentic Street Taste</p>
+
+<p>📍 Gurugram | Delhi | Noida | Faridabad</p>
+
+<p>📞 +91 98765 43210 | ✉ info@puchka.co</p>
+
+<p>© 2026 Puchka.Co. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
