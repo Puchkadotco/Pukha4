@@ -174,16 +174,10 @@ revealItems();
 const contactForm = document.querySelector(".contact-form");
 
 if (contactForm) {
-
-    contactForm.addEventListener("submit", function (e) {
-
-        e.preventDefault();
-
+    contactForm.addEventListener("submit", function () {
         alert("✅ Thank you! Your message has been sent.");
-
-        this.reset();
-
     });
+
 
 }
 
@@ -197,11 +191,8 @@ if (dealerForm) {
 
     dealerForm.addEventListener("submit", function (e) {
 
-        e.preventDefault();
 
         alert("🎉 Thank you for applying! Our team will contact you soon.");
-
-        this.reset();
 
     });
 
