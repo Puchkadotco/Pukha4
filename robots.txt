@@ -1,0 +1,39 @@
+# ===================================
+# Puchka.Co Robots.txt
+# ===================================
+
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /index.html
+Allow: /About.html
+Allow: /Service.html
+Allow: /Gallery.html
+Allow: /Contact.html
+Allow: /blog1.html
+Allow: /blog2.html
+Allow: /blog3.html
+Allow: /visit.html
+
+# Block system files if they exist
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /.env
+
+# Allow CSS, JS and Images
+Allow: /*.css$
+Allow: /*.js$
+Allow: /image/
+Allow: /images/
+
+# Crawl delay (ignored by Google but used by some bots)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://puchka.co/sitemap.xml
+
+# Preferred host
+Host: puchka.co
