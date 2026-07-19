@@ -188,7 +188,7 @@ if (contactForm) {
             message: this.message.value
         };
 
-        await fetch('YOUR_GOOGLE_SCRIPT_URL', {
+        await fetch('https://script.google.com/macros/s/AKfycbyifo76t-ZJzC0f91i6yMLLMpBy6UaIGTnAVURKtpu2W5E_Yg4_1ku26mfIgBgn_o7-ig/exec', {
             method: 'POST',
             body: JSON.stringify(data)
         });
