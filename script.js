@@ -171,16 +171,34 @@ revealItems();
 // Contact Form
 // ===============================
 
-const contactForm = document.querySelector(".contact-form");
+const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
-    contactForm.addEventListener("submit", function () {
-        alert("✅ Thank you! Your message has been sent.");
+
+    contactForm.addEventListener('submit', async function(e) {
+
+        e.preventDefault();
+
+        const data = {
+            formType: "Contact Form",
+            name: this.name.value,
+            email: this.email.value,
+            phone: this.phone.value,
+            subject: this.subject.value,
+            message: this.message.value
+        };
+
+        await fetch('YOUR_GOOGLE_SCRIPT_URL', {
+            method: 'POST',
+            body: JSON.stringify(data)
+        });
+
+        alert('Message Sent Successfully');
+        this.reset();
+
     });
 
-
 }
-
 // ===============================
 // Dealership Form
 // ===============================
