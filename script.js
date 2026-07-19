@@ -203,18 +203,51 @@ if (contactForm) {
 // Dealership Form
 // ===============================
 
-const dealerForm = document.querySelector(".dealer-form");
+const dealerForm = document.querySelector('.dealer-form-submit');
 
 if (dealerForm) {
 
-    dealerForm.addEventListener("submit", function (e) {
+    dealerForm.addEventListener('submit', async function(e) {
 
+        e.preventDefault();
 
-        alert("🎉 Thank you for applying! Our team will contact you soon.");
+        const data = {
+            formType: "Dealership",
+
+            name: this.name.value,
+            email: this.email.value,
+            phone: this.phone.value,
+
+            city: this.city.value,
+            state: this.state.value,
+
+            experience: this.experience.value,
+            investment: this.investment.value,
+
+            message: this.message.value
+        };
+
+        try {
+
+            await fetch('https://script.google.com/macros/s/AKfycbwIoQkg6cB55TstYcpuxjw2Ela8tzCEaBo9hwAdHsMlREcP0jMfbxl7-tedIpHKWQE/exec', {
+                method: 'POST',
+                body: JSON.stringify(data)
+            });
+
+            alert('Dealership Application Submitted Successfully');
+
+            this.reset();
+
+        } catch(error) {
+
+            alert('Submission Failed');
+
+        }
 
     });
 
 }
+
 
 // ===============================
 // Counter Animation
