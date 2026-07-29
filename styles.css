@@ -74,24 +74,28 @@ header.sticky .menu-btn i{
     color:#333 !important;
 }
 
-.logo{
-font-size:32px;
-font-weight:700;
-color:#ff6b00;
-}
-.logo span{
-    color:#4CAF50;
-}
+
 .logo{
     display:flex;
     align-items:center;
-    gap:10px;
+    font-size:32px;
+    font-weight:700;
+    color:#ff6b00;
+}
+
+.logo span{
+    color:#4CAF50;
 }
 
 .logo-icon{
-    width:95px;
-    height:95px;
-    object-fit:contain;
+    width:65px;
+    height:65px;
+    margin-right:8px;
+}
+
+.back-btn,
+.fa-chevron-left{
+    display:none;
 }
 nav{
 display:flex;
