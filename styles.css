@@ -82,6 +82,17 @@ color:#ff6b00;
 .logo span{
     color:#4CAF50;
 }
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-icon{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+}
 nav{
 display:flex;
 gap:30px;
