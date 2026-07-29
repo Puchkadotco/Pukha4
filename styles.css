@@ -79,7 +79,9 @@ font-size:32px;
 font-weight:700;
 color:#ff6b00;
 }
-
+.logo span{
+    color:#4CAF50;
+}
 nav{
 display:flex;
 gap:30px;
