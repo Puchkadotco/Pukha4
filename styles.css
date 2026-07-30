@@ -1388,4 +1388,7 @@ html, body{
     overflow-x: hidden;
     width: 100%;
 }
+.co-green{
+    color:#4CAF50; /* Green */
 }
+   }
